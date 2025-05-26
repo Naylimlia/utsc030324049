@@ -18,13 +18,12 @@ void dMenu() {
 }
 
 void inputData() {
-  system("cls");
     cout << "Masukkan jumlah elemen array (max " << MAX_SIZE << "): ";
     cin >> n;
 
-    if (n > MAX_SIZE || n <= 0) {
-        cout << "Jumlah elemen tidak valid!" << endl;
-        getch(); 
+    if (n <= 0 || n > MAX_SIZE) {
+        cout << "Jumlah elemen tidak valid!\n";
+        cin.get(); 
         return;
     }
 
